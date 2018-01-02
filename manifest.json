@@ -9,7 +9,9 @@
   "languages": [
     "en-US"
   ],
-  "nlu": ["wcs"],
+  "nlu": [
+    "wcs"
+  ],
   "tags": [
     "hello world"
   ]
