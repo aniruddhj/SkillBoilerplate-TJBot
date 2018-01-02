@@ -1,15 +1,15 @@
 {
   "workspace": {
     "en-US": {
-      "name": "your workspace name",
-      "workspace_id": "your workspace id"
+      "name": "Shopping_bot",
+      "workspace_id": "b1975505-b666-4cc2-b65d-291f0e1e819b"
     }
   },
   "credentials": {
-    "url": "your wcs url",
-    "version": "your wcs version",
-    "version_date": "your wcs version date",
-    "password": "your wcs password",
-    "username": "your wcs username"
+    "url": "https://gateway.watsonplatform.net/conversation/api",
+    "version": "v1",
+    "version_date": "2017-04-21",
+    "password": "aMx33TAgC7JQ",
+    "username": "bf8fe99d-c364-44d0-8f4a-7a10d997ece4"
   }
 }

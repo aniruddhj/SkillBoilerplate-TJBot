@@ -1,11 +1,8 @@
+YML="manifest.yml"
 
- YML="<your manifest file name>"
+SPACE="test"
 
+ORGANIZATION="aniruddh.jhavar"
 
- SPACE="<your target space>"
-
- ORGANIZATION="<your bluemix organization>"
-
-
-  bx target -s $SPACE -o $ORGANIZATION
-  bx app push -f $YML
+bx target -s $SPACE -o $ORGANIZATION
+bx app push -f $YML

@@ -1,10 +1,11 @@
 applications:
-- path: .
-  buildpack: sdk-for-nodejs
-  no-route: false
-  memory: 128M
-  instances: 1
-  domain: mybluemix.net
-  name: <<name of the skill. example: my-skill>>
-  host: <<url to skill. example: my-skill. this would become "my-skill.mybluemix.net">>
+    -
+        path: .
+        buildpack: sdk-for-nodejs
+        no-route: false
+        memory: 128M
+        instances: 1
+        domain: mybluemix.net
+        name: tj-bot
+        host: tj-bot
 disk_quota: 256M
