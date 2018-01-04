@@ -42,7 +42,7 @@ const {handler} = require('./skill-sdk');
 const languageResource = {
     'en-US': {
         'translation': {
-            'HELLO_WORLD': 'Hello world',
+            'HELLO_WORLD': 'Hello World',
             'TRY_AGAIN': 'Sorry, please try again later'
         }
     },
@@ -79,12 +79,20 @@ let converseCallback = function (result, response, err) {
 const stateDefaultActions = handler.createActionsHandler({
 
     // this is an example of an intent using a regex engine, the intent catches the phrase "hello"
-    'Welcome': (request, response) => {
+    'hello': (request, response) => {
         response.say(handler.t('HELLO_WORLD')).send();
     },
     //this is an example of an intent using wcs - in order for this to work you need your own wcs workspace and intents
     //and change the intents name with your own
-    'hello-world-wcs': (request, response) => {
+
+    'Welcome': (request, response) => {
+        handler.converse(request, response, converseCallback)
+    },
+
+    'information_request': (request, response) => {
+        handler.converse(request, response, converseCallback)
+    },
+    'decision_replies': (request, response) => {
         handler.converse(request, response, converseCallback)
     },
     'unhandled': (request, response) => {
